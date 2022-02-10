@@ -1,0 +1,73 @@
+/* Navbar */
+.navbar-brand{
+    font-family: Viga;
+    font-size: 17px;
+}
+
+/* Main Page */
+.hero {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {    
+      content: "";
+      background-image: url(assets/jumbotron.jpg);
+      background-color: #EEEE;
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.2;
+}
+
+h1 {
+  position: relative;
+  color: #000;  
+  font-size: 100px;
+  text-align: left;
+  font-family: Bebas Neue;
+  text-shadow: 2px 2px #B11313;
+}
+/* Utilities */
+.tombol{
+    font-family: Viga;
+    border-radius: 40px;
+    background-color : #B4202E;
+    border-color: #B4202E;
+}
+
+
+
+/* Desktop Version */
+@media (min-width:992px) {
+    
+    .navbar-brand, .nav-link{
+        font-family: Viga;
+        margin-right: 5px;
+        text-shadow: 1px 1px 1px rgb(255, 255, 255);
+        }
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #B4202E;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+
+
+    }
+
+    .jumbotron{
+        margin-top: -75px;
+    }
+
+
+}
